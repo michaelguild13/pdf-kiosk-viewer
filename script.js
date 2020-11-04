@@ -53,7 +53,7 @@
 
   const loadPdf = (PDF_PATH) => {
     pdfjsLib.GlobalWorkerOptions.workerSrc =
-      'http://mozilla.github.io/pdf.js/build/pdf.worker.js';
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
 
     const loadingTask = pdfjsLib.getDocument({ url: PDF_PATH });
 

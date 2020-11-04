@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PDF webviewer for Kiosks</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="app">
+      Loading...
+    </div>
+    <footer id="footer">
+      <small><i>To use with a different file, use the file url param. ex: /?file=locaitonOfFile.pdf</i></small>
+      <br/>
+      <small>Created by <a href="https://michaelguild.me/" title="">Michael Guild</a></small>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiped-events@1.1.4/dist/swiped-events.min.js" crossorigin="anonymous"></script>
+    <script defer src="http://mozilla.github.io/pdf.js/build/pdf.js" crossorigin="anonymous"></script>
+    <script defer src="./script.js" crossorigin="anonymous"></script>
+  </body>
+</html>

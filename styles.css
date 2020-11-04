@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --border-color: #000;
+  --border-size: 1px;
+  --border-radius: 5px;
+}
+.pageCounter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: var(--border-color);
+  border: var(--border-size) solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 10px 2px;
+  margin: 5px;
+}
+
+.pageCounter::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 0;
+  height: 0;
+  border-radius: 3px;
+  border-width: 5px;
+  border-style: solid;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  border-left-color: var(--border-color);
+  border-bottom-color: var(--border-color);
+}
+
+#footer {
+  text-align: center;
+}

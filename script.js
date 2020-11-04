@@ -74,7 +74,7 @@
             page.appendChild(buildPageCounter(PAGE_NUMBER, numPages));
             page.appendChild(buildSVG(viewport, textContent));
 
-            App.replaceChildren(page);
+            App.replaceWith(page);
           });
         });
       };

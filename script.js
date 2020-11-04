@@ -75,7 +75,7 @@
             page.appendChild(buildPageCounter(PAGE_NUMBER, numPages));
             page.appendChild(buildSVG(viewport, textContent));
 
-            Loader.remove();
+            Loader.className = 'loaded';
 
             App.firstChild.remove();
             App.append(page);

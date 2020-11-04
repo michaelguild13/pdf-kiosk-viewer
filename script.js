@@ -4,6 +4,7 @@
   let PAGE_NUMBER = 1;
 
   const App = document.getElementById('app');
+  const Loader = document.getElementById('loader');
   const isLoaded =
     document.readyState === 'complete' ||
     (document.readyState !== 'loading' && !document.documentElement.doScroll);
@@ -74,6 +75,8 @@
             page.appendChild(buildPageCounter(PAGE_NUMBER, numPages));
             page.appendChild(buildSVG(viewport, textContent));
 
+            Loader.remove();
+
             App.firstChild.remove();
             App.append(page);
           });
@@ -98,7 +101,6 @@
   };
 
   const init = () => {
-    console.log('init');
     loadPdf(pdfURL);
   };
 
